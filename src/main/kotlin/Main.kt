@@ -1,3 +1,5 @@
+import opciones.InitFlow
+import opciones.InitSharedState
 import opciones.InitStateFlow
 
 private const val MAX_CAPSULAS = 4
@@ -14,7 +16,7 @@ fun main() {
     * Recomiendo un numero bajo de capsulas (2) en esta ejecucion, en especial si se hace con varios consumidores.
     */
 
-    //opciones.InitFlow.init(MAX_CAPSULAS)
+    //InitFlow.init(MAX_CAPSULAS)
 
     /* -- SHARED FLOW ---
     *
@@ -27,7 +29,7 @@ fun main() {
     * por lo que no terminan nunca, pero mientras que el State si detecta que ya no quedan capsulas en este caso no.
     */
 
-    //opciones.InitSharedState.init(MAX_CAPSULAS)
+    //InitSharedState.init(MAX_CAPSULAS)
 
     /* -- STATE FLOW --
     *
