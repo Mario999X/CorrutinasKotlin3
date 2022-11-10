@@ -1,3 +1,5 @@
+import opciones.InitStateFlow
+
 private const val MAX_CAPSULAS = 4
 
 fun main() {
@@ -12,7 +14,7 @@ fun main() {
     * Recomiendo un numero bajo de capsulas (2) en esta ejecucion, en especial si se hace con varios consumidores.
     */
 
-    //InitFlow.init(MAX_CAPSULAS)
+    //opciones.InitFlow.init(MAX_CAPSULAS)
 
     /* -- SHARED FLOW ---
     *
@@ -25,12 +27,11 @@ fun main() {
     * por lo que no terminan nunca, pero mientras que el State si detecta que ya no quedan capsulas en este caso no.
     */
 
-    //InitSharedState.init(MAX_CAPSULAS)
+    //opciones.InitSharedState.init(MAX_CAPSULAS)
 
     /* -- STATE FLOW --
     *
     * https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.flow/-state-flow/
-    *
     * El uso de este tipo de flujo es el idoneo para aplicar el uso de un monitor
     *
     * Este caso lo he dejado como el anterior, dos productores un consumidor, pero con
