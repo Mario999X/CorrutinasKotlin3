@@ -13,7 +13,7 @@ data class IAFlow(val id: String) {
     * Indicamos = flow y emitimos el item generado
     *
     * No es necesario que el metodo sea suspend
-    * */
+    */
     fun producirCapsulas(maxCapsulas: Int) = flow {
         for (i in 1..maxCapsulas) {
             delay((200..500).random().toLong())
